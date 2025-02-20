@@ -149,7 +149,7 @@ const TrafficSignalDiagram = () => {
           const phase = getPhaseAtTime(segmentTime, intersection.offset);
 
           const colors = {
-            green: '#00ff00',
+            green: '#15803d',
             yellow: '#ffff00',
             red: '#ff0000'
           };
@@ -224,7 +224,7 @@ const TrafficSignalDiagram = () => {
 
       <div className="mt-4 flex gap-4 text-white">
         <div className="flex items-center">
-          <div className="w-4 h-4 bg-green-500 mr-2"></div>
+          <div className="w-4 h-4 bg-green-700 mr-2"></div>
           <span>Green</span>
         </div>
         <div className="flex items-center">
