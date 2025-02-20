@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import * as d3 from 'd3';
 
 const TrafficSignalDiagram = () => {
@@ -19,7 +19,7 @@ const TrafficSignalDiagram = () => {
       { type: 'yellow', duration: 5 },
       { type: 'red', duration: 20 }
     ],
-    speed: 35 // Speed in ft/s for progression line
+    speed: 35 
   };
 
   useEffect(() => {
@@ -196,7 +196,7 @@ const TrafficSignalDiagram = () => {
       .attr('x', width / 2)
       .attr('y', 35)
       .attr('fill', 'black')
-      .text('Distance (ft)');
+      .text('Distance (meter)');
 
     svg.append('g')
       .call(d3.axisLeft(yScale))
